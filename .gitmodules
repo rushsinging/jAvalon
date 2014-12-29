@@ -1,0 +1,9 @@
+[submodule "avalon/zeus"]
+	path = avalon/zeus
+	url = https://github.com/rushsinging/zeus.git
+[submodule "avalon/apollo"]
+	path = avalon/apollo
+	url = https://github.com/rushsinging/apollo.git
+[submodule "avalon/heracles"]
+	path = avalon/heracles
+	url = https://github.com/rushsinging/heracles.git
