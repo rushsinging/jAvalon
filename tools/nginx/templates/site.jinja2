@@ -14,6 +14,9 @@ include apis_includes;
 {%- elif loc.type == 'proxy' -%}
 {{ proxy('app_' ~ loc.app.app_name) }}
 {%- elif loc.app.app_base == 'alias' -%}
+if ($uri ~* \.(eot|ttf|woff)$ ){
+    add_header Access-Control-Allow-Origin *;
+}
 {{ alias(loc.app.app_alias) }}
 {%- elif loc.type == 'include' -%}
 {{ include(loc.module) }}

@@ -16,7 +16,8 @@
         <script type="text/javascript" src="{{ static_file('js/lib/less.js') }}"></script>
         {% endblock %}
     </head>
-    <body>
+    {% set body_class="" %}
+    <body class="{{ body_class }}">
         {% block header %}
         {% include '_header.html' %}
         {% endblock %}

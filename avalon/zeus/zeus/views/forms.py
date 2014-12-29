@@ -6,7 +6,9 @@ from wtforms import StringField, PasswordField, HiddenField
 
 class DisplaySuccessForm(Form):
     display = HiddenField()
-    success = HiddenField(validators=[validators.URL()])
+    success = HiddenField(validators=[
+        validators.URL(), validators.Optional()
+    ])
 
 
 class LoginForm(Form):

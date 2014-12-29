@@ -387,7 +387,7 @@ a {
 .page .main .blog-pager .blog-pager-newer .blog-pager-newer-arrow {
   width: 36px;
   height: 40px;
-  background-image: url(../../img/arrows.png);
+  background-image: url(../../images/arrows.png);
   background-repeat: no-repeat;
   float: left;
 }
@@ -416,7 +416,7 @@ a {
 .page .main .blog-pager .blog-pager-older .blog-pager-older-arrow {
   width: 36px;
   height: 40px;
-  background-image: url(../../img/arrows.png);
+  background-image: url(../../images/arrows.png);
   background-repeat: no-repeat;
   background-position: -44px 0px;
   float: right;
@@ -489,7 +489,7 @@ a {
   top: 50%;
   margin-left: -10px;
   margin-top: -10px;
-  background-image: url(../../img/social.png);
+  background-image: url(../../images/social.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
@@ -501,7 +501,7 @@ a {
   top: 50%;
   margin-left: -10px;
   margin-top: -10px;
-  background-image: url(../../img/social.png);
+  background-image: url(../../images/social.png);
   background-repeat: no-repeat;
   background-position: -20px 0px;
 }
@@ -513,7 +513,7 @@ a {
   top: 50%;
   margin-left: -10px;
   margin-top: -10px;
-  background-image: url(../../img/social.png);
+  background-image: url(../../images/social.png);
   background-repeat: no-repeat;
   background-position: -40px 0px;
 }
