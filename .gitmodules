@@ -7,3 +7,6 @@
 [submodule "avalon/heracles"]
 	path = avalon/heracles
 	url = https://github.com/rushsinging/heracles.git
+[submodule "static/src/plugins/zenpen"]
+	path = static/src/plugins/zenpen
+	url = https://github.com/rushsinging/zenpen.git
