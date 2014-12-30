@@ -7,18 +7,6 @@ from share.engines.db import DataBaseOperation
 
 
 class TableOpt(object):
-    @classmethod
-    def create(cls, *args, **kwargs):
-        tmp = cls(*args, **kwargs)
-        db.session.add(tmp)
-        db.session.commit()
-        return tmp
-
-    def delete(self):
-        db.session.delete(self)
-        db.session.commit()
-        return self
-
     def as_dict(self):
         return {}
 
