@@ -9,12 +9,11 @@
         <link href="{{ static_file('css/gui.css') }}" rel="stylesheet" type="text/css"/>
         {% endblock %}
 
-        {% block script %}
         <script type="text/javascript" src="{{ static_file('js/lib/jquery.js') }}"></script>
         <script type="text/javascript" src="{{ static_file('js/lib/bootstrap.js') }}"></script>
         <script type="text/javascript" src="{{ static_file('js/avalon.js') }}"></script>
         <script type="text/javascript" src="{{ static_file('js/lib/less.js') }}"></script>
-        {% endblock %}
+
     </head>
     {% set body_class="" %}
     <body class="{{ body_class }}">
@@ -28,4 +27,9 @@
         {% block footer %}
         {% endblock %}
     </body>
+        {% block script %}
+        <script type="text/javascript">
+            var ukey = {{ request.ukey|tojson|safe }};
+        </script>
+        {% endblock %}
 </html>

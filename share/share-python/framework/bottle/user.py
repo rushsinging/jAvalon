@@ -18,6 +18,13 @@ def user_meta(*ukey_list):
     return result
 
 
+def reload_user_meta(*ukey_list):
+    for ukey in ukey_list:
+        result = backends.apollo.user.get(ukey=ukey)
+        memory.memcached.set(
+            'USER::%s' % ukey, json.dumps(result or {}))
+
+
 def _load_user_meta(ukey):
     result = json.loads(memory.memcached.get('USER::%s' % ukey) or '{}')
     if not result:
